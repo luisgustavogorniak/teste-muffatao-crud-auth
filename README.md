@@ -75,6 +75,10 @@ Dentro da pasta `laravel-auth/`:
 
 `composer install`
 
+Depois:
+
+`npm install`
+
 ### **Passo 2 – Criar o arquivo .env**
 
 Crie um arquivo `.env` baseado no `.env.example`:
@@ -87,7 +91,8 @@ Configure a conexão com o MySQL de acordo com seu ambiente.
 
 Ajuste as seguintes variáveis conforme o seu ambiente:
 
-```DB_CONNECTION=mysql
+```
+DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=teste_entrevista
@@ -107,7 +112,13 @@ O esquema de usuários compartilha o mesmo banco de dados do CRUD.
 
 Esse comando criará automaticamente a estrutura padrão de autenticação utilizada pelo Laravel, incluindo as tabelas de usuários, resets de senha e demais estruturas necessárias para o funcionamento da aplicação.
 
-### **Passo 6 – Iniciar o servidor Laravel**
+### **Passo 6 – Gerar os arquivos de build do frontend**
+
+Execute o comando abaixo para gerar os assets utilizados pelo Laravel:
+
+`npm run build`
+
+### **Passo 7 – Iniciar o servidor Laravel**
 
 `php artisan serve`
 
