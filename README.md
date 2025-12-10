@@ -101,7 +101,13 @@ O esquema de usuários compartilha o mesmo banco de dados do CRUD.
 
 `php artisan key:generate`
 
-### **Passo 5 – Iniciar o servidor Laravel**
+### **Passo 5 – Rodar as Migrations do Laravel**
+
+`php artisan migrate`
+
+Esse comando criará automaticamente a estrutura padrão de autenticação utilizada pelo Laravel, incluindo as tabelas de usuários, resets de senha e demais estruturas necessárias para o funcionamento da aplicação.
+
+### **Passo 6 – Iniciar o servidor Laravel**
 
 `php artisan serve`
 
